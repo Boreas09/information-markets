@@ -1,10 +1,9 @@
-use crate::amm::AMM;
-use crate::amm::Market;
+use crate::market::Market;
 
-mod amm;
+mod market;
 fn main() {
     
     println!("Hello, world!");
-    let market: AMM = Market::new();
-    println!("Value: {}", market.funds());
+    let market: Market = Market::new();
+    println!("Value: {}", market.invariant());
 }
